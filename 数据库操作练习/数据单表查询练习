@@ -1,0 +1,61 @@
+#  单表查询练习
+* 选择表中若干列
+Student
+
+| Sno       | Sname    |  Sex |Sage |Sdept |
+| --------- | -------- | -----: | --: |  ---:|
+| 201215121  | 李勇   |  男| 20 |CS|
+| 201215122| 刘晨     | 女  | 19 |CS |
+| 201215123| 王敏 |  女 | 18 |MA|
+| 201215124| 张力    |   男|19  |IS |
+
+    【例】查询全体学生的学号与姓名
+       `select Sno，Sname`
+         from Student;
+    【例】查询全体学生的姓名、学号所在系
+      select Sname,Sno,Sdept
+      from Student;
+      【例】查询全体学生的详细记录
+       select *
+       from Student;
+      【例】 查询全体学生的姓名及出生年份
+      select Sname,2018-Sage
+      from Student;
+     【例】 查询全体学生的姓名、出生年份和所在院系(要求用小写字母表示系名)
+      select Sname,'Year of Birth:',2018-Sage,LOWER(Sdept)
+      from Student
+ * 选择表中若干元组
+    SC
+    
+ | Sno       | Cno    |  Grade 
+| -:  | ----: | -----:|
+|  201215121  | 1      |     92  |
+|  201215121  |    2   |    85   |
+|  201215121    | 3      |   88    |
+| 201215122|    2   |   90    |
+| 201215122|     3  |    80   |
+        【例】查询选修了课程的学生学号(删除重复行)
+        select  distinct Sno
+        from SC;
+      【例】  查询计算机科学系全体学生的名单
+        select Sname
+        from Student
+        where Sdept=‘CS’;
+        【例】查询所有年龄在20岁以下的学生姓名及年龄
+        select Sname,Sage
+        from Student
+        where Sage<20;
+       【例】查询考试成绩不及格的学生的学号
+        select distinct Sno
+        from SC
+        where Grade<60;
+       【例】 查询年龄在20~23岁之间的学生的姓名、系别和年龄
+        select Sname,Sdept,Sage
+        from Student 
+        where Sage between 20 and 23;
+       【例】 查询年龄不在20~23岁之间的学生姓名、系别和年龄
+        select Sname,Sdept,Sage
+        from Student
+        where Sage not between 20 and 23;
+        
+        

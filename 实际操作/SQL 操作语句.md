@@ -32,7 +32,7 @@
     
     GROUP BY <列名1>[HAVING<条件表达式>]
 
-     group by子句带**having** 短语,则只有**满足指定条件的组**才能输出
+     group by子句带having短语,则只有满足指定条件的组才能输出
 
     ORDER  BY<列名2>[ASC|DESC]
     order  by子句作用是对结果的值进行升序/降序
@@ -72,6 +72,7 @@
   * MIN([DISTINCT|ALL] <列名> )**→**列中最小值
 * ## GROUP BY 子句 
   将查询结果按一列或多列分组，相等为一组
+* ## [单表查询练习](https://github.com/wj825953087/DataBaseStudy/blob/master/数据库操作练习/数据单表查询练习.md) 
 --------------------------
 ##  ②、 连接查询
 --------------------------

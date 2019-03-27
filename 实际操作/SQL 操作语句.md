@@ -18,7 +18,7 @@
           其中 unique → 索引的每个索引值只对应唯一的数据记录, cluster → 要建立的索引是聚簇索引
           
     * 修改索引
- 4. ![数据定义练习](https://github.com/wj825953087/DataBaseStudy/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%BB%83%E4%B9%A0/%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E7%BB%83%E4%B9%A0.md)
+ 4. [数据定义练习](https://github.com/wj825953087/DataBaseStudy/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C%E7%BB%83%E4%B9%A0/%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89%E7%BB%83%E4%B9%A0.md)
 
 --------------------------
 # 二、 数据查询
